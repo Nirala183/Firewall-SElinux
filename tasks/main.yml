@@ -1,0 +1,12 @@
+---
+# asible.gitea/tasks/main.yml
+- import_tasks: include-vars.yml
+
+# task
+- import_tasks: firewalld.yml
+  tags: ['firewalld']
+
+- name: Set SELinux to permissive mode
+  ansible.builtin.command: setenforce 0
+  when: ansible_selinux.status == "enabled"
+...

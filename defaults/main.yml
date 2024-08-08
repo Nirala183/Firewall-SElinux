@@ -1,0 +1,147 @@
+---
+# --- firewalld ---
+firewalld_open_ports:
+  - port: 22
+    protocol: tcp
+    zone: public
+  - port: 22
+    protocol: udp
+    zone: public
+  - port: 22
+    protocol: tcp
+    zone: trusted
+  - port: 22
+    protocol: udp
+    zone: trusted
+  - port: 9345
+    protocol: tcp
+    zone: public
+  - port: 9345
+    protocol: udp
+    zone: public
+  - port: 9345
+    protocol: tcp
+    zone: public
+  - port: 6443
+    protocol: tcp
+    zone: public
+  - port: 8472
+    protocol: udp
+    zone: public
+  - port: 10250
+    protocol: tcp
+    zone: public
+  - port: 2379
+    protocol: tcp
+    zone: public
+  - port: 2380
+    protocol: tcp
+    zone: public
+  - port: 2381
+    protocol: tcp
+    zone: public
+  - port: 30000-32767
+    protocol: tcp
+    zone: public
+  - port: 4240
+    protocol: tcp
+    zone: public
+  - port: 179
+    protocol: tcp
+    zone: public
+  - port: 4789
+    protocol: udp
+    zone: public
+  - port: 5473
+    protocol: tcp
+    zone: public
+  - port: 5473
+    protocol: udp
+    zone: public
+  - port: 9098
+    protocol: tcp
+    zone: public
+  - port: 9099
+    protocol: tcp
+    zone: public
+  - port: 51820
+    protocol: udp
+    zone: public
+  - port: 51821
+    protocol: udp
+    zone: public
+  - port: 443
+    protocol: tcp
+    zone: public
+  - port: 5432
+    protocol: tcp
+    zone: public
+  - port: 1521
+    protocol: tcp
+    zone: public
+  - port: 2049
+    protocol: tcp
+    zone: public
+  - port: 2049
+    protocol: udp
+    zone: public
+  - port: 20048
+    protocol: tcp
+    zone: public
+  - port: 20048
+    protocol: udp
+    zone: public
+  - port: 32803
+    protocol: tcp
+    zone: public
+  - port: 32803
+    protocol: udp
+    zone: public
+  - port: 32764-32767
+    protocol: tcp
+    zone: public
+  - port: 32764-32767
+    protocol: udp
+    zone: public
+  - port: 5000
+    protocol: tcp
+    zone: public
+  - port: 6379
+    protocol: tcp
+    zone: public
+  - port: 53
+    protocol: tcp
+    zone: public
+  - port: 53
+    protocol: udp
+    zone: public
+  - port: 9796
+    protocol: tcp
+    zone: public
+  - port: 9234
+    protocol: tcp
+    zone: public
+  - port: 19090
+    protocol: tcp
+    zone: public
+  - port: 6942
+    protocol: tcp
+    zone: public
+  - port: 9091
+    protocol: tcp
+    zone: public
+  - port: 4244
+    protocol: tcp
+    zone: public
+  - port: 6081
+    protocol: tcp
+    zone: public
+  - port: 80
+    protocol: tcp
+    zone: public
+
+firewalld_interfaces:
+  - name: eth0
+    zone: public
+    state: enabled
+
